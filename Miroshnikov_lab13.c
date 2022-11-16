@@ -27,7 +27,7 @@ int main() {
         if (c != EOF) {
             prevsym = c;
         }
-        if ((!SeparatorsCheck(c))) {
+        if (!SeparatorsCheck(c)) {
             if ((iter == 0) || (iter == 1)) {
                 if (iter == 0) {
                     iter += 1;
@@ -37,7 +37,7 @@ int main() {
                 letter2 = letter2 | CharToSet(c);
             }
         }
-        if ((SeparatorsCheck(c)) && (iter == 0)) {
+        if (SeparatorsCheck(c) && (iter == 0)) {
             continue;
         }
         if (SeparatorsCheck(c) && (iter != 0)) {
@@ -65,5 +65,5 @@ int main() {
             }
         }
     }
-return 0;
+    return 0;
 }
