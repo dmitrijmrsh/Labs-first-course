@@ -1,2 +1,2 @@
-# Labs-first-year 
-# Лабораторные работы за 1 курс
+# Labs-MAI
+My labs in Mai
